@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "../scss/function";
+* {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  box-sizing: border-box;
+}
+
+// loader
+.loader {
+  @include loader;
+  z-index: 3;
+  img {
+    @include img-loader;
+  }
+}
+.disppear {
+  animation: vanish 3s forwards;
+}
+@keyframes vanish {
+  100% {
+    opacity: unset;
+    visibility: hidden;
+  }
+}
+// loader
+// body
+body {
+  background-color: white;
+  display: block;
+  color: black;
+  nav {
+    @include nav;
+    background-color: black;
+    z-index: 2;
+    img {
+      width: 200px;
+      height: 100px;
+    }
+    .fa-solid {
+      font-size: 20px;
+      color: white;
+      .item {
+        @include item;
+      }
+    }
+  }
+  img {
+    height: 280px;
+  }
+  .main {
+    .card-body {
+      @include card-body;
+    }
+    .card-img-top {
+      width: 95%;
+      margin: auto;
+      margin-top: 10px;
+    }
+    .right {
+      text-align: center;
+      color: white !important;
+      .btn-back {
+        display: none;
+      }
+    }
+    .card-title {
+      height: 43px;
+      margin-bottom: 0.5rem;
+    }
+    .card {
+      @include card;
+      .btn {
+        color: white;
+      }
+    }
+  }
+}
+// body
+// footer
+footer {
+  @include footer;
+  a {
+    @include a-footer;
+  }
+  img {
+    width: 100px;
+    height: 50px;
+  }
+}
+// footer
+// media
+@media only screen and (max-width: 500px) {
+  .loader {
+    img {
+      @include img-loader-media;
+    }
+  }
+}
+// media

@@ -1,0 +1,397 @@
+// loader
+@mixin loader {
+  background-color: black;
+  background-size: 100%;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+@mixin img-loader {
+  width: 7%;
+  height: 15%;
+  position: relative;
+  right: 17px;
+}
+// loader
+// sweet/salty
+@mixin body-background($green) {
+  display: block;
+  background: #000000;
+  background: -moz-linear-gradient(45deg, #000000 0%, $green 50%, #ffffff 100%);
+  background: -webkit-linear-gradient(
+    45deg,
+    #000000 0%,
+    $green 50%,
+    #ffffff 100%
+  );
+  background: linear-gradient(45deg, #000000 0%, $green 50%, #ffffff 100%);
+  color: white;
+}
+@mixin nav {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  color: white !important;
+}
+@mixin a-hover($green) {
+  color: $green !important;
+  font-size: 17px;
+  transition: all 0.5s;
+}
+@mixin container-box {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+// box
+@mixin box {
+  border-radius: 8px;
+  width: 280px;
+  height: 360px;
+  margin: 12px;
+  background-color: black;
+}
+@mixin h($font) {
+  font-size: $font;
+  letter-spacing: 1.6px;
+  word-spacing: 4.8px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+  margin: 5px;
+}
+@mixin img-box {
+  margin-top: 5px;
+  border-radius: 5px 5px 0px 0px;
+  width: 260px;
+  height: 200px;
+}
+@mixin a($color) {
+  display: none;
+  color: $color;
+  font-size: 20px;
+}
+@mixin btn-background($color) {
+  width: 200px;
+  background: #f7f7f7;
+  background: -moz-radial-gradient(
+    center,
+    #f7f7f7 0%,
+    $color 100%,
+    #000000 100%
+  );
+  background: -webkit-radial-gradient(
+    center,
+    #f7f7f7 0%,
+    $color 100%,
+    #000000 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    #f7f7f7 0%,
+    $color 100%,
+    #000000 100%
+  );
+  font-weight: bold;
+  text-align: center;
+}
+@mixin right-div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+// box
+// full box
+@mixin box-full {
+  background-color: #00000095;
+  width: 100%;
+  height: 105%;
+  position: fixed;
+  top: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin ingredient-full {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+@mixin btn-back-full($color) {
+  width: 400px;
+  background: #f7f7f7;
+  background: -moz-radial-gradient(
+    center,
+    #f7f7f7 0%,
+    $color 100%,
+    #000000 100%
+  );
+  background: -webkit-radial-gradient(
+    center,
+    #f7f7f7 0%,
+    $color 100%,
+    #000000 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    #f7f7f7 0%,
+    $color 100%,
+    #000000 100%
+  );
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+@mixin left-div-full {
+  height: 80%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  color: #000000;
+  padding: 35px;
+  -webkit-box-shadow: inset 18px 0px 23px 8px rgba(6, 6, 6, 0.119);
+  box-shadow: inset 18px 0px 23px 8px rgba(6, 6, 6, 0.119);
+}
+@mixin right-div-full {
+  height: 80%;
+  width: 40%;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: #000000;
+  padding: 20px;
+  border-radius: 0px 20px 20px 0px;
+  -webkit-box-shadow: inset -18px 0px 23px 8px rgba(6, 6, 6, 0.119);
+  box-shadow: inset -18px 0px 23px 8px rgba(6, 6, 6, 0.119);
+}
+@mixin img-full {
+  width: 400px;
+  height: 350px;
+  border: 5px none #a4a4a4;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 6px 1px #ffffff;
+  box-shadow: 0px 0px 6px 1px #ffffff;
+}
+@mixin box-hover {
+  -webkit-box-shadow: 0px 0px 22px 7px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 22px 7px rgba(0, 0, 0, 0.8);
+  transition: all 0.5s;
+}
+// full box
+// sweet/salty
+// media
+@mixin box-media {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  margin: 2px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+@mixin right-div-media {
+  width: 95%;
+  border-radius: 0px;
+  box-shadow: none;
+}
+@mixin left-div-media {
+  width: 95%;
+  border-radius: 0%;
+  overflow: scroll;
+  box-shadow: none;
+}
+@mixin img-loader-media {
+  width: 15%;
+  height: 7%;
+  position: relative;
+  right: 17px;
+}
+// media
+// footer
+@mixin footer {
+  background-color: black !important;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin a-footer {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+// footer
+// delivery
+@mixin input-box {
+  margin: 10px 0px;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+}
+@mixin input-sub {
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  padding: 8px;
+}
+@mixin img-loder {
+  width: 30%;
+  height: 15%;
+  position: relative;
+  right: 17px;
+}
+@mixin card-body {
+  color: white;
+  display: flex;
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  height: 91px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+@mixin card {
+  background: #000000;
+  background: -moz-radial-gradient(
+    center,
+    #000000 0%,
+    #727272 0%,
+    #000000 100%
+  );
+  background: -webkit-radial-gradient(
+    center,
+    #000000 0%,
+    #727272 0%,
+    #000000 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    #000000 0%,
+    #727272 0%,
+    #000000 100%
+  );
+}
+@mixin item {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+// delivery
+// message
+@mixin box-message($color) {
+  display: flex;
+  background-color: $color;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: -600px;
+  width: 50%;
+  left: 310px;
+  height: 213px;
+  border-radius: 10px;
+  padding: 38px;
+  background-color: $color #de9a9a;
+}
+@mixin box-message-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #de9a9a;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: -602px;
+  width: 90%;
+  left: 17px;
+  height: 213px;
+  border-radius: 10px;
+  padding: 38px;
+  background-color: #de9a9a #de9a9a;
+}
+// message
+// home
+@mixin right-home {
+  background-image: url(/img/sweet.jpeg);
+  background-color: rgba(0, 0, 0, 0.433);
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.64);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.64);
+  border-radius: 25px 25px 025px 25px;
+  height: 450px;
+  width: 625px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+@mixin right-hover {
+  -webkit-box-shadow: 0px 0px 32px 3px rgba(255, 255, 255, 0.48);
+  box-shadow: 0px 0px 32px 3px rgba(255, 255, 255, 0.48);
+  background-blend-mode: normal;
+  height: 460px;
+  width: 635px;
+}
+@mixin left-home {
+  background-image: url(/img/salty.webp);
+  background-color: rgba(0, 0, 0, 0.433);
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.64);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.64);
+  border-radius: 25px 25px 025px 25px;
+  height: 450px;
+  width: 625px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+}
+@mixin left-hover {
+  background-blend-mode: normal;
+  -webkit-box-shadow: 0px 0px 32px 3px rgba(255, 255, 255, 0.48);
+  box-shadow: 0px 0px 32px 3px rgba(255, 255, 255, 0.48);
+  height: 460px;
+  width: 635px;
+}
+// home

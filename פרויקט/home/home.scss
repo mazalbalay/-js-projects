@@ -1,0 +1,67 @@
+@import "../scss/function";
+// body
+body {
+  background-color: black;
+}
+nav {
+  padding: 10px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+// right
+.right {
+  @include right-home;
+  h1 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 4px 3px 0 #7a7a7a, 3px 2px 20px #000000;
+  }
+}
+.right:hover {
+  @include right-hover;
+}
+// right
+// left
+.left {
+  @include left-home;
+  h1 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 4px 3px 0 #7a7a7a, 3px 2px 20px #000000;
+  }
+}
+.left:hover {
+  @include left-hover;
+}
+// left
+// body
+// media
+@media only screen and (max-width: 700px) {
+  body {
+    .left {
+      margin: auto;
+      height: 350px;
+      width: 415px;
+      margin-top: 25px !important;
+    }
+    .left:hover {
+      height: 360px;
+      width: 425px;
+    }
+    .right {
+      margin: auto;
+      height: 350px;
+      width: 415px;
+      margin-top: 25px !important;
+    }
+    .right:hover {
+      height: 360px;
+      width: 425px;
+    }
+  }
+}
+// media
